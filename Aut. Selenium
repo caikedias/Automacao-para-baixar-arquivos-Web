@@ -1,0 +1,12 @@
+from selenium import webdriver
+import win32com.client as win32
+
+# Criar caminho para pegar os dados
+navegador = webdriver.Chrome()
+
+navegador.get('http://www.procon.df.gov.br/cdc-para-download/')
+navegador.find_element_by_xpath('//*[@id="conteudo"]/p[3]/a').click()
+navegador.find_element_by_xpath('//*[@id="icon"]/iron-icon').click()
+
+
+
